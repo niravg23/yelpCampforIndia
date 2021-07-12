@@ -1,0 +1,43 @@
+<% layout('layouts/boilerplate') %>
+
+    <div class="d-flex justify-content-center align-items-center">
+        <div class="row">
+            <div class="col-md-6 offset-md-3 col-xl-4 offset-xl-4">
+                <div class="card">
+                    <img src="https://images.unsplash.com/photo-1571863533956-01c88e79957e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80" class="card-img-top" alt="..." />
+
+                    <div class="card-body">
+                        <div class="card-title">Register</div>
+                        <div class="card-text">
+                            <form action="/register" method="POST" novalidate class="needs-validation">
+                                <div class="mb-3">
+                                    <div>
+                                        <label for="username" class="form-label">Username</label>
+                                        <input type="text" class="form-control" name="username" id="username" placeholder="Username" required />
+                                        <div class="valid-feedback">Looks good!</div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div>
+                                        <label for="Email" class="form-label">Email Address</label>
+                                        <input type="email" class="form-control" name="email" id="Email" placeholder="Email" required />
+                                        <div class="valid-feedback">Looks good!</div>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <div>
+                                        <label for="password" class="form-label">Password</label>
+                                        <input type="password" class="form-control" name="password" id="password" placeholder="Password" required />
+                                        <div class="valid-feedback">Looks good!</div>
+                                    </div>
+                                </div>
+                                <div class="d-grid">
+                                    <button class="btn btn-success">Register</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
