@@ -154,6 +154,7 @@ app.use((err, req, res, next) => {
     res.status(statusCode).render('error', { err })
 })
 
-app.listen(8080, (req, res) => {
-    console.log("8080 is working")
+const port = process.env.PORT || 8080
+app.listen(port, (req, res) => {
+    console.log(`Serving on ${port}`)
 })
