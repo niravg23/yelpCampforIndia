@@ -6,8 +6,8 @@ const map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
     // center: [-103.59179687498357, 40.66995747013945],
-    center: [78.9629, 20.5937],
-    zoom: 3
+    center: [77.3, 21.3537],
+    zoom: 3.5
 });
 
 map.addControl(new mapboxgl.NavigationControl());
